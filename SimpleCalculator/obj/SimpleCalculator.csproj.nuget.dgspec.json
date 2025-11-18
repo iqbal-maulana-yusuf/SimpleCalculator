@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/SimpleCalculator.csproj",
-        "projectName": "SimpleCalculator",
+        "projectName": "CalculatorLibrary",
         "projectPath": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/SimpleCalculator.csproj",
         "packagesPath": "/home/iqbal/.nuget/packages/",
         "outputPath": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/obj/",
@@ -38,6 +38,13 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Nerdbank.GitVersioning": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.9.50, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,11 +1,81 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Nerdbank.GitVersioning/3.9.50": {
+        "type": "package",
+        "build": {
+          "build/Nerdbank.GitVersioning.props": {},
+          "build/Nerdbank.GitVersioning.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Nerdbank.GitVersioning.props": {},
+          "buildCrossTargeting/Nerdbank.GitVersioning.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Nerdbank.GitVersioning/3.9.50": {
+      "sha512": "HtOgGF6jZ+WYbXnCUCYPT8Y2d6mIJo9ozjK/FINTRsXdm4Zgv9GehUMa7EFoGQkqrMcDJNOIDwCmENnvXg4UbA==",
+      "type": "package",
+      "path": "nerdbank.gitversioning/3.9.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/InProjectVersionComputation.targets",
+        "build/MSBuildCore/LibGit2Sharp.dll",
+        "build/MSBuildCore/LibGit2Sharp.dll.config",
+        "build/MSBuildCore/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/MSBuildCore/Nerdbank.GitVersioning.Tasks.dll",
+        "build/MSBuildCore/Nerdbank.GitVersioning.dll",
+        "build/MSBuildCore/Newtonsoft.Json.dll",
+        "build/MSBuildCore/Validation.dll",
+        "build/MSBuildFull/LibGit2Sharp.dll",
+        "build/MSBuildFull/LibGit2Sharp.dll.config",
+        "build/MSBuildFull/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/MSBuildFull/Nerdbank.GitVersioning.Tasks.dll",
+        "build/MSBuildFull/Nerdbank.GitVersioning.dll",
+        "build/MSBuildFull/Newtonsoft.Json.dll",
+        "build/MSBuildFull/System.Buffers.dll",
+        "build/MSBuildFull/System.Memory.dll",
+        "build/MSBuildFull/System.Numerics.Vectors.dll",
+        "build/MSBuildFull/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/MSBuildFull/System.Text.Json.dll",
+        "build/MSBuildFull/Validation.dll",
+        "build/MSBuildFull/lib/linux-x64/libgit2-3f4182d.so",
+        "build/MSBuildFull/lib/osx-arm64/libgit2-3f4182d.dylib",
+        "build/MSBuildFull/lib/osx-x64/libgit2-3f4182d.dylib",
+        "build/MSBuildTargetCaching.targets",
+        "build/Nerdbank.GitVersioning.Common.targets",
+        "build/Nerdbank.GitVersioning.Inner.targets",
+        "build/Nerdbank.GitVersioning.props",
+        "build/Nerdbank.GitVersioning.targets",
+        "build/PrivateP2PCaching.proj",
+        "build/runtimes/linux-arm/native/libgit2-3f4182d.so",
+        "build/runtimes/linux-arm64/native/libgit2-3f4182d.so",
+        "build/runtimes/linux-musl-arm/native/libgit2-3f4182d.so",
+        "build/runtimes/linux-musl-arm64/native/libgit2-3f4182d.so",
+        "build/runtimes/linux-musl-x64/native/libgit2-3f4182d.so",
+        "build/runtimes/linux-ppc64le/native/libgit2-3f4182d.so",
+        "build/runtimes/linux-x64/native/libgit2-3f4182d.so",
+        "build/runtimes/osx-arm64/native/libgit2-3f4182d.dylib",
+        "build/runtimes/osx-x64/native/libgit2-3f4182d.dylib",
+        "build/runtimes/win-arm64/native/git2-3f4182d.dll",
+        "build/runtimes/win-x64/native/git2-3f4182d.dll",
+        "build/runtimes/win-x86/native/git2-3f4182d.dll",
+        "buildCrossTargeting/Nerdbank.GitVersioning.props",
+        "buildCrossTargeting/Nerdbank.GitVersioning.targets",
+        "nerdbank.gitversioning.3.9.50.nupkg.sha512",
+        "nerdbank.gitversioning.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Nerdbank.GitVersioning >= 3.9.50"
+    ]
   },
   "packageFolders": {
     "/home/iqbal/.nuget/packages/": {}
@@ -14,7 +84,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/SimpleCalculator.csproj",
-      "projectName": "SimpleCalculator",
+      "projectName": "CalculatorLibrary",
       "projectPath": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/SimpleCalculator.csproj",
       "packagesPath": "/home/iqbal/.nuget/packages/",
       "outputPath": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/obj/",
@@ -44,6 +114,13 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Nerdbank.GitVersioning": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.9.50, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jaiLu98FJFQ=",
+  "dgSpecHash": "1r4nt4QZ2jo=",
   "success": true,
   "projectFilePath": "/home/iqbal/RiderProjects/SimpleCalculator/SimpleCalculator/SimpleCalculator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/iqbal/.nuget/packages/nerdbank.gitversioning/3.9.50/nerdbank.gitversioning.3.9.50.nupkg.sha512"
+  ],
   "logs": []
 }
